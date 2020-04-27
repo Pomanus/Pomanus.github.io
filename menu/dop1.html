@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<meta charset="utf-8">
+		<title>Зоопарк</title>
+		<link href ="css\style.css" rel="stylesheet">
+		
+ </head>
+<style>
+    .flex {
+        width: 350px;
+        height: 200px;
+        border: 1px solid #555;
+        font: 14px Arial;
+
+        /* flexbox setup */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex > div {
+        flex: 1 1 auto;
+        width: 100px;
+        transition: width 1.1s ease-out;
+    }
+
+    /* colors */
+    .flex > div:nth-child(1){ background: #FFFFFF; }
+    .flex > div:nth-child(2){ background: #0000FF; }
+    .flex > div:nth-child(3){ background: #FF0000; }
+
+    .flex > div:hover {
+        width: 350px;
+    }
+   
+    </style> 
+ <body background="fon\fon.png">
+  <h1>Московский детский зоопарк</h1>
+  <p align="justify" class="gradient">В ходе торжественной церемонии мэр Москвы Сергей Собянин объявил об открытии Детского зоопарка и пригласил первых посетителей ознакомиться с его экспозицией. Вместе с генеральным директором нашего зоопарка Светланой Акуловой они осмотрели все зоны Детского зоопарка, побывали на контактной площадке, где бодро скачут камерунские козы и овцы уэссан, заглянули в авиарий, на тематический скалодром и к ослам Пуату.</p>
+	 <p><img src="kar\kar4.jpeg" width="700" height="430"></p>
+ <div class="paginator">
+            <a class="current" href="dop1.html">1</a>
+            <a href="dop2.html">2</a>
+            <a href="dop3.html">3</a>
+            <a href="dop4.html">4</a>
+			<a href="dop5.html">5</a>
+			<a href="dop6.html">6</a>
+			<a href="dop7.html">7</a>
+			<a href="dop8.html">8</a>
+            <a class="next" href="dop2.html">ᐅ</a>
+        </div>
+		<ul>
+		   <div class="flex">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+<div class="wrap"><div class="four"><kbd>Поймай меня</kbd></div></div>
+ </body>
+</html>
